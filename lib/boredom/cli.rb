@@ -44,17 +44,13 @@ module Boredom
       # show help and exit
       def help
         puts <<~HELP
-          #{'Usage'.magenta.bold}:
+          #{'usage'.magenta.bold}:
             #{'bdm'.cyan} #{'<command>'.yellow}
 
-          #{'Commands'.magenta.bold}:
-            #{'encode'.cyan}  convert to encoding
-            #{'decode'.cyan}  convert to json
-            #{'help'.cyan}    show this message
-
-          #{'Examples'.magenta.bold}:
-            #{'bdm'.cyan} #{'encode'.yellow} #{'hello.json'.yellow} #{'hello.bdm'.yellow}  encode hello.json into hello.bdm
-            #{'bdm'.cyan} #{'decode'.yellow} #{'hello.bdm'.yellow} #{'hello.json'.yellow}  decode hello.bdm into hello.json
+          #{'commands'.magenta.bold}:
+            #{'encode'.cyan} #{'<json>'.yellow} #{'<bdm>'.yellow}   convert to encoding
+            #{'decode'.cyan} #{'<bdm>'.yellow}  #{'<json>'.yellow}  convert to json
+            #{'help'.cyan}                  show this message
         HELP
 
         exit 0
