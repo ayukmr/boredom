@@ -45,12 +45,12 @@ module Boredom
       def help
         puts <<~HELP
           #{'usage'.magenta.bold}:
-            #{'bdm'.cyan} #{'<command>'.yellow}
+            #{'bdm'.blue} #{'<command>'.yellow}
 
           #{'commands'.magenta.bold}:
-            #{'encode'.cyan} #{'<json>'.yellow} #{'<bdm>'.yellow}   convert to encoding
-            #{'decode'.cyan} #{'<bdm>'.yellow}  #{'<json>'.yellow}  convert to json
-            #{'help'.cyan}                  show this message
+            #{'encode'.blue} #{'<json>'.yellow} #{'<bdm>'.yellow}   convert to encoding
+            #{'decode'.blue} #{'<bdm>'.yellow}  #{'<json>'.yellow}  convert to json
+            #{'help'.blue}                  show this message
         HELP
 
         exit 0
